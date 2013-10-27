@@ -7,8 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<div id="steelmeshdark"></div>
+<div id="menubardiv"></div>
+<div id='main_content'>
+  <div class='menu'>
+     <div class='menu_content'>
+      <div id='top_navigation'><%= render_navigation :level => 1 %></div>
+      <div class='clear_float'></div>
+      <div class='content_wrapper'>
+        <div class='content'>
+          <%= yield %>
+        </div>
+        <div class='clear_float'></div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>

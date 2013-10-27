@@ -41,3 +41,6 @@ gem 'debugger'
 # Active scaffold
 gem 'active_scaffold', :path => "../active_scaffold"
 gem 'recordselect', :path => "../recordselect"
+
+# Menu
+gem 'simple-navigation'
